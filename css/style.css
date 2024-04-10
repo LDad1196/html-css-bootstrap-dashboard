@@ -1,0 +1,24 @@
+body {
+    max-height: 100vh;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 5rem;
+    
+}
+
+.my-h5 {
+    height: 5rem;
+}
+
+main {
+    height: calc(100vh - 5rem);
+    
+}
+
+.my-h-calc {
+    height: calc(100vh - 5rem);
+}
