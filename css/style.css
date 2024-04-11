@@ -1,7 +1,7 @@
 body {
-   
     padding: 0;
     margin: 0;
+    max-height: 100vh;
 }
 
 
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     
 }
 
@@ -26,11 +26,11 @@ main {
 }
 
 .h-90 {
-    height: calc(90vh - 5rem);
+    height: 90%;
 }
 
 .h-10 {
-    height: calc(10vh - 5rem);
+    height: 10%;
 }
 
 .fa-bell {
@@ -44,8 +44,9 @@ main {
 .my-ps-bg {
     background-image: url(../img/sidebar-bg.png);
 }
+
 @media screen and (max-width:769px) {
-    
+
     .hidden {
         display: none;
     }

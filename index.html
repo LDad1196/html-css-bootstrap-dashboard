@@ -15,13 +15,13 @@
         <section>
             <div class="row w-100 my-3 align-items-center text-center">
                 <!-- Logo -->
-                <div class="col-lg-1 col-md-2 col-sm-1 col-2">
+                <div class=" col-xl-1 col-lg-1 col-md-2 col-sm-1 col-2">
                     <img class="w-100 hidden" src="./img/logo.svg" alt="logo">
                     <img class="logo-small" src="./img/mobile-logo.png" alt="">
                 </div>
                 
                 <!-- Searchbar -->
-                <div class="col-lg-8 col-md-7 col-sm-10 col-9">
+                <div class=" col-xl-9 col-lg-8 col-md-7 col-sm-10 col-9">
                     <label class="visually-hidden" for="autoSizingInputGroup">Search</label>
                     <div class="input-group border-end-0">
                         <div class="input-group-text" style="background-color: lightgrey;"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -30,7 +30,7 @@
                 </div>
                 
                 <!-- Sezione con campanellina Dropdown -->
-                <div class="col-lg-3 col-md-3 col-sm-1 col-1 px-0 row align-items-center">
+                <div class=" col-xl-2 col-lg-3 col-md-3 col-sm-1 col-1 px-0 row align-items-center">
                     <div class="col hidden">
                         <i class="fa-solid fa-list"></i>
                     </div>
@@ -56,7 +56,41 @@
     </header>
 
     <!-- Main con Doppia sezione -->
-    <main></main>
+    <main class="row w-100">
+
+        <!-- Sezione Home lato sx -->
+        <section class=" col-xl-1 col-lg-1 col-md-2 col-sm-1 col-2 text-light my-ps-bg flex-column" style="background-color: #051e34;">
+            <div class="h-90 p-3 m-auto flex-column">
+                <div class="my-hover-btn row mb-3">
+                    <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-house"></i></a>
+                    <div class="col-lg-9 hidden ">
+                        <a class="c-white" href="">Home</a>
+                    </div>
+                </div>
+                <div class="my-hover-btn row mb-3">
+                    <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-chart-simple"></i></a>
+                    <div class="col-lg-9 hidden ">
+                        <a class="c-white" href="">Stats</a>
+                    </div>
+                </div>
+                <div class="my-hover-btn row mb-3">
+                    <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-signal"></i></a>
+                    <div class="col-lg-9 hidden ">
+                        <a class="c-white" href="">Signals</a>
+                    </div>
+                </div>
+            </div>
+            <div class="h-10 px-3 m-auto">
+                <div class="my-hover-btn row mb-3">
+                    <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-gear"></i></a>
+                    <div class="col-lg-9 hidden ">
+                        <a class="c-white" href="">Admin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 </body>
 </html>
