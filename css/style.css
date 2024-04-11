@@ -1,14 +1,9 @@
 body {
-    max-height: 100vh;
-    max-width: 100%;
+   
     padding: 0;
     margin: 0;
 }
 
-header {
-    height: 5rem;
-    
-}
 
 .c-white {
     color: white;
@@ -20,17 +15,14 @@ header {
 }
 
 main {
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 80px);
     
 }
 
-.my-h-calc {
-    height: calc(100vh - 5rem);
-}
 
 .logo-small {
     display: none;
-    width: 100%;
+    width: 50px;
 }
 
 .h-90 {
@@ -52,20 +44,14 @@ main {
 .my-ps-bg {
     background-image: url(../img/sidebar-bg.png);
 }
-@media screen and (max-width:880px) {
-    
-    header {
-        margin: 0 auto;
-    }
+@media screen and (max-width:769px) {
     
     .hidden {
         display: none;
     }
 
     
-
     .logo-small {
         display: block;
-        width:100%
     }
 }

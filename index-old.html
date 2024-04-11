@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Boolean Teaching Platform</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="w-100 pt-2 px-0">
+        <section class="row w-100 align-items-center text-center">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-2">
+                <img class="w-100 hidden" src="./img/logo.svg" alt="logo">
+                <img class="logo-small" src="./img/mobile-logo.png" alt="">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                <label class="visually-hidden" for="autoSizingInputGroup">Search</label>
+                <div class="input-group border-end-0">
+                    <div class="input-group-text" style="background-color: lightgrey;"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="form-control border-start-0" style="background-color: lightgrey" id="autoSizingInputGroup" placeholder="Prova a cercare: Lezione di Laravel">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-1 col-1 px-0 row align-items-center">
+                <div class="col hidden">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+                <div class="col hidden">
+                    <i class="fa-solid fa-circle-question"></i>
+                </div>
+                <div class="col hidden">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+                <nav class="navbar navbar-expand col">
+                    <div>
+                        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown dropstart">
+                            <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+        </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="row container-fluid px-0">
+            <!-- Sezione Home lato sx -->
+          <section class="col-lg-1 col-md-1 col-sm-1 col-1 p-3 text-light container-fluid my-h-calc px-0 my-ps-bg flex-column justify-content-between " style="background-color: #051e34;">
+                <div class="h-90 p-3 flex-column">
+                    <div class="my-hover-btn row mb-3">
+                        <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-house"></i></a>
+                        <div class="col-lg-9 hidden ">
+                            <a class="c-white" href="">Home</a>
+                        </div>
+                    </div>
+                    <div class="my-hover-btn row mb-3">
+                        <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-chart-simple"></i></a>
+                        <div class="col-lg-9 hidden ">
+                            <a class="c-white" href="">Stats</a>
+                        </div>
+                    </div>
+                    <div class="my-hover-btn row mb-3">
+                        <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-signal"></i></a>
+                        <div class="col-lg-9 hidden ">
+                            <a class="c-white" href="">Signals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-10 p-3 mb-3">
+                    <div class="my-hover-btn row mb-3">
+                        <a class="col-lg-3 c-white" href="#"><i class="fa-solid fa-gear"></i></a>
+                        <div class="col-lg-9 hidden ">
+                            <a class="c-white" href="">Admin</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Sezione Centrale Main -->
+            <section class="col-lg-11 col-md-11 col-sm-11 col-11 my-h-calc container-fluid overflow-auto px-0">
+              
+              <!-- Colonna bg primary centrale alta -->
+              <div class=" my-h5 bg-primary row text-light align-items-center px-0 py-4 m-auto">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
+                        <h3>Boolean</h3>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 flex-column">
+                        <h6>Studenti Online negli ultimi 30 giorni</h6>
+                        <div><strong>125</strong></div>
+                    </div>
+                    
+                    <!-- Sezione Nuovo Studente con Offcanvas-->
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                        <h6 class="me-3" style="display: inline-block;">Nuovo Studente</h6>
+                        <button class="btn btn-primary border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="font-size: 1.5rem;">+</button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo Studente</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="row g-3">
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control"  aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control"  aria-label="Last name">
+                                    </div>
+                                  </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Check me out
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div> 
+                </div>
+                
+                <!-- Sezione lato sx main content centrale -->
+                <section class="row container-fluid px-0 mt-5">
+                    <div class="col-lg-6 col-sm-12 my-h-calc ">
+                      
+                      <!-- Card con tabella -->
+                      <div class="card col-11 my-3 m-auto">
+                            <h4 class="card-header py-2">Prossime classi</h4>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">First</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                          </div>
+
+                          <!-- Card F.A.Q. -->
+                          <div class="card col-11 m-auto">
+                            <h4 class="card-header py-2">F.A.Q.</h4>
+                            <div class="card-body p-3">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                          <strong>Come Aggiungere un nuovo studente</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <strong>Come Aggiungere un nuovo studente</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                      </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <strong>Come Aggiungere un nuovo studente</strong>
+                                        </button>
+                                      </h2>
+                                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                    
+                    <!-- Sezione Lato DX Main content -->
+                    <div class="col-lg-6 col-sm-12 my-h-calc px-0">
+                      
+                      <!-- Card con radios -->
+                      <div class="card col-11 my-3">
+                            <h4 class="card-header py-2">To Do List</h4>
+                            <div class="card-body ">
+                                <div class="form-check p-3 ms-1 border rounded">
+                                    <input class="form-check-input ms-1" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      <strong>Kickoff Nuove classi</strong>
+                                    </label>
+                                  </div>
+                                  <div class="form-check  p-3 ms-1 border rounded">
+                                    <input class="form-check-input ms-1" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        <strong>Lezione su Bootsrap 5 in classe #75</strong>
+                                    </label>
+                                  </div>
+                                  <div class="form-check p-3 ms-1 border rounded">
+                                    <input class="form-check-input ms-1" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        <strong>Controllare username github studenti</strong>
+                                    </label>
+                                  </div>
+                            </div>
+                          </div>
+
+                          <!-- Card con img stats -->
+                          <div class="card col-11 my-3 ">
+                            <h4 class="card-header py-2">Prossime classi</h4>
+                            <div class="card-body">
+                                <img class="card-img" src="./img/stats.jpeg" alt="">
+                            </div>
+                          </div>
+                    </div>
+                </section>
+            </section>
+        
+        </section>
+    </main>
+
+</body>
+</html>
