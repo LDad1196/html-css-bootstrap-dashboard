@@ -97,7 +97,7 @@
             <div class="bg-primary row text-light align-items-center py-4">
                 
                 <!-- Sezione con Buttons con display none -->
-                <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 col-12 mb-3 my-order-2 flex-column">
+                <div class="col-xl-6 col-lg-7 col-md-5 col-sm-5 col-12 mb-3 my-order-2 flex-column">
                     
                     <div>
                     <h3 style="display: inline-block;">Boolean</h3>
@@ -116,13 +116,13 @@
                 </div>
                 
                 <!-- Sezione Studenti online -->
-                <div class="col-xl-3 col-lg-2 col-md-2 col-sm-2 col-12 mb-3 flex-column my-order-3">
+                <div class="col-xl-3 col-lg-2 col-md-3 col-sm-3 col-12 mb-3 flex-column my-order-3">
                     <h6>Studenti Online negli ultimi 30 giorni</h6>
                     <div><strong>125</strong></div>
                 </div>
 
                 <!-- Sezione nuovo studente -->
-                <div class="col-lg-2 col-md-3 col-sm-3 col-12 mb-3 my-order-1">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-12 mb-3 my-order-1">
                     <h4 class="me-3" style="display: inline-block;">Nuovo Studente</h4>
                     <button class="btn btn-primary border rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="font-size: 1.5rem;">+</button>
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -192,7 +192,7 @@
             <!-- Display Flex centrale con cards -->
             <section class="row">
                 <!-- Sezione dx del main centrale -->
-                <div class="col-xl-6 col-l-6 col-md-12 col-xs-12 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 col-12">
 
                     <div class="card col-xl-11 col-lg-12 col-md-12 col-12 my-5 ">
                         <h4 class="card-header py-2">Prossime classi</h4>
@@ -368,10 +368,10 @@
             </div>
 
                 <!-- Sezione sx del main centrale -->
-                <div class="col-xl-6 col-l-6 col-md-12 col-xs-12 col-12">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 col-12">
                     
                     <!-- Card con radios -->
-                    <div class="card col-xl-11 col-lg-12 col-md-12 col-12 my-5 ">
+                    <div class="card col-xl-11 col-lg-11 col-md-12 col-12 my-5 ">
                         <h4 class="card-header py-2">To Do List</h4>
                         <div class="card-body ">
                             <div class="form-check p-3 ms-1 border rounded">
@@ -395,8 +395,22 @@
                         </div>
                     </div>
                     
-                    <div class="card col-xl-11 col-lg-12 col-md-12 col-12 my-5 ">
+                    <!-- Card con grafico -->
+                    <div class="card col-xl-11 col-lg-11 col-md-12 col-12 my-5 ">
                         <img class="w-100" src="./img/stats.jpeg" alt="">
+                        <div class="card-body ms-2">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h5 class="card-title mb-3">Utenti Attivi</h5>
+                                    <h6 class="card-subtitle mb-4">Lista degli utenti attivi nell'ultimo mese</h6>
+                                </li>
+                                <li class="list-group-item">Gennaio:1200</li>
+                                <li class="list-group-item">Febbraio:1200</li>
+                                <li class="list-group-item">Marzo:1500</li>
+                                <li class="list-group-item"><a href="">Visualizza report approfondito</a></li>
+                              </ul>
+                            
+                        </div>
                     </div>
 
                 </div>
